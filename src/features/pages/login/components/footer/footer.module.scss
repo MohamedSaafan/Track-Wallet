@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+}

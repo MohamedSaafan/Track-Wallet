@@ -1,0 +1,29 @@
+.account {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-left: 1rem;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &Copy {
+      margin-left: 1.5rem;
+    }
+
+    img {
+      width: 13px;
+      height: 13px;
+      object-fit: cover;
+    }
+  }
+}

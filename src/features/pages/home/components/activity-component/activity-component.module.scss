@@ -1,0 +1,37 @@
+.activity {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 12px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  width: 367px;
+  margin: auto;
+  margin-top: 1rem;
+  &__circle {
+    width: 24px;
+    height: 27px;
+    border-radius: 11px;
+    background-color: #fff;
+    margin: 0 1rem;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0.3rem 0;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__status {
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 0 6px;
+    margin-right: 0.5rem;
+  }
+}

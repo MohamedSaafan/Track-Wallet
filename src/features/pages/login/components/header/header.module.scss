@@ -1,0 +1,17 @@
+.header {
+  padding-top: 4rem;
+  text-align: center;
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  &__details {
+    color: var(--color-gray);
+  }
+}

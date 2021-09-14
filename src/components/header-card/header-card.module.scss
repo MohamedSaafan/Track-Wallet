@@ -1,0 +1,18 @@
+.card {
+  width: 367px;
+  height: 175px;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  border-radius: 12px;
+
+  padding-top: 2rem;
+
+  &__line {
+    margin: 1rem auto;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+  }
+}

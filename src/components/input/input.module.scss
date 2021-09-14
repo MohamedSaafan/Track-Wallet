@@ -1,0 +1,21 @@
+.input {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 239px;
+
+  &__label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    outline: none;
+    width: 239px;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+  }
+}
