@@ -1,5 +1,5 @@
 import Styles from "./asset-component.module.scss";
-import etherumIcon from "../../../../../images/assets/etherum.svg";
+import etherumIcon from "../../images/assets/etherum.svg";
 
 interface Props {}
 

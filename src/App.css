@@ -22,6 +22,7 @@
 :root {
   --color-gray: #707070;
   --color-gray-1: #b1b1b1;
+  --color-gray-overlay: rgba(159, 155, 155, 0.7);
   --color-primary: #f18f0f;
 
   --input-border-radius: 12px;

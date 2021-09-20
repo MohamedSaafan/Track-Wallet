@@ -1,4 +1,4 @@
-import Asset from "../asset-component";
+import Asset from "../../../../../components/asset-component";
 import Styles from "./assets.module.scss";
 
 interface Props {}

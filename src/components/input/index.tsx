@@ -6,6 +6,7 @@ interface Props {
   placeholder: string;
   className?: string;
   image?: any;
+  onImageClick?: () => void;
 }
 
 const Input: React.FC<Props> = ({
@@ -15,12 +16,19 @@ const Input: React.FC<Props> = ({
   placeholder,
   className,
   image,
+  onImageClick,
 }) => {
   const id = Math.random() * 100 + label;
   const inputClassName = className || "";
+  const handleImageClick = onImageClick ? onImageClick : () => {};
+
   const renderImage = () => {
     if (image)
-      return <img src={image} alt={label} className={Styles.input__image} />;
+      return (
+        <button onClick={handleImageClick} className={Styles.input__image}>
+          <img src={image} alt={label} />
+        </button>
+      );
     return <> </>;
   };
 

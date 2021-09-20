@@ -1,0 +1,23 @@
+.input {
+  border: none;
+  outline: none;
+  border-radius: var(--input-border-radius);
+  padding-left: 0.5rem;
+  width: 90%;
+  &Wrapper {
+    border: 2px solid var(--color-gray-1);
+    border-radius: var(--input-border-radius);
+    width: 264px;
+    margin: auto;
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  &Search {
+    position: absolute;
+    left: 0.7rem;
+    top: 3px;
+  }
+}

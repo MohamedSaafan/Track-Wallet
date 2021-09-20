@@ -4,10 +4,28 @@ import toIcon from "../../../images/send/to.svg";
 import assetIcon from "../../../images/send/asset.svg";
 import Input from "../../../components/input";
 import From from "./from";
+import { useState } from "react";
+import ToModal from "./to-modal";
+import AssetsModal from "./assets-modal";
 
 interface Props {}
 
 const Send: React.FC<Props> = (props) => {
+  const [shouldShowToModal, setShouldShowToModal] = useState(false);
+  const [shouldShowAssetsModal, setShouldShowAssetsModal] = useState(false);
+
+  const handleToModalCloseClick = () => {
+    setShouldShowToModal(false);
+  };
+  const handleAssetsModalCloseClick = () => {
+    setShouldShowAssetsModal(false);
+  };
+  const openToModal = () => {
+    setShouldShowToModal(true);
+  };
+  const openAssetsModal = () => {
+    setShouldShowAssetsModal(true);
+  };
   return (
     <div className={`page ${Styles.send}`}>
       <NavHeader link='/home' title='Send' />
@@ -21,6 +39,7 @@ const Send: React.FC<Props> = (props) => {
           value=''
           image={toIcon}
           className={Styles.send__input}
+          onImageClick={openToModal}
         />{" "}
       </div>
       <div className={Styles.send__inputWrapper}>
@@ -31,6 +50,7 @@ const Send: React.FC<Props> = (props) => {
           value=''
           image={assetIcon}
           className={Styles.send__input}
+          onImageClick={openAssetsModal}
         />
       </div>
       <div className={Styles.send__inputWrapper}>
@@ -55,6 +75,16 @@ const Send: React.FC<Props> = (props) => {
           Send
         </button>
       </footer>
+      {shouldShowToModal ? (
+        <ToModal onCloseClick={handleToModalCloseClick} />
+      ) : (
+        <> </>
+      )}
+      {shouldShowAssetsModal ? (
+        <AssetsModal onCloseClick={handleAssetsModalCloseClick} />
+      ) : (
+        <> </>
+      )}
     </div>
   );
 };
