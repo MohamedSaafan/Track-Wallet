@@ -1,0 +1,21 @@
+.from {
+  margin: 3rem auto 1.5rem;
+  width: 239px;
+  &__lable {
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    border: 2px solid var(--color-primary);
+    border-radius: var(--input-border-radius);
+    width: 239px;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    align-items: center;
+    margin: auto;
+    color: var(--color-gray-1);
+    font-weight: bold;
+    font-size: 12px;
+  }
+}

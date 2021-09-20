@@ -1,0 +1,33 @@
+.send {
+  &__input {
+    border: 2px solid var(--color-primary) !important;
+    &Wrapper {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 9rem;
+    &__btn {
+      width: 101px;
+      height: 30px;
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid var(--color-primary);
+      border-radius: var(--button-border-radius);
+      color: #fff;
+      cursor: pointer;
+      &Cancel {
+        margin-right: 1rem;
+        color: var(--color-primary);
+      }
+      &Send {
+        margin-left: 1rem;
+        background-color: var(--color-primary);
+      }
+    }
+  }
+}

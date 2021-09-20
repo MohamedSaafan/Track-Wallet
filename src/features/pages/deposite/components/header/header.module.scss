@@ -1,0 +1,26 @@
+.header {
+  margin-top: 4rem;
+  text-align: center;
+
+  &__details {
+    margin-bottom: 2rem;
+    font-size: 12px;
+
+    &:last-of-type {
+      width: 144px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    width: 157px;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}

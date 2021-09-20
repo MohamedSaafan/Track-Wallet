@@ -17,5 +17,16 @@
     border: 1px solid #000;
     padding-left: 0.5rem;
     padding-right: 1.5rem;
+
+    &Wrapper {
+      position: relative;
+
+      img {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }

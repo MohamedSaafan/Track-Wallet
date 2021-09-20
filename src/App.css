@@ -12,7 +12,8 @@
   margin: auto;
   margin-top: 5rem;
   border: 1px solid #000;
-  overflow-y: hidden;
+  position: relative;
+  overflow-y: scroll;
 }
 .page::-webkit-scrollbar {
   display: none;

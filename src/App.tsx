@@ -3,6 +3,7 @@ import "./App.css";
 import Deposite from "./features/pages/deposite";
 import Home from "./features/pages/home/home";
 import Login from "./features/pages/login/login";
+import Send from "./features/pages/send";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path='/home' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/deposite' component={Deposite} />
-
+          <Route path='/send' component={Send} />
           <Redirect to='/login' />
         </Switch>
       </MemoryRouter>
