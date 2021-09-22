@@ -1,5 +1,6 @@
 import { MemoryRouter, Redirect, Route, Switch } from "react-router";
 import "./App.css";
+import Accounts from "./features/pages/accounts";
 import Deposite from "./features/pages/deposite";
 import Home from "./features/pages/home/home";
 import Login from "./features/pages/login/login";
@@ -14,6 +15,7 @@ function App() {
           <Route path='/login' component={Login} />
           <Route path='/deposite' component={Deposite} />
           <Route path='/send' component={Send} />
+          <Route path='/accounts' component={Accounts} />
           <Redirect to='/login' />
         </Switch>
       </MemoryRouter>

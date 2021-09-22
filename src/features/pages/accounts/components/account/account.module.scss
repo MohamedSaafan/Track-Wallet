@@ -1,0 +1,29 @@
+.account {
+  background-color: #eee;
+  padding-left: 4rem;
+  height: 47px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+
+  &__icons {
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  &__checked {
+    width: 14.14px;
+  }
+  &__checked {
+    margin-right: 0.5rem;
+  }
+
+  &__number {
+    font-size: 10px;
+  }
+
+  &__address {
+    font-size: 8px;
+    color: var(--color-gray-2);
+  }
+}

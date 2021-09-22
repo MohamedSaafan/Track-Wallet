@@ -1,0 +1,33 @@
+.navs {
+  list-style-type: none;
+  margin-top: 7rem;
+
+  &__nav {
+    background-color: var(--color-gray-1);
+    width: 239px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+}

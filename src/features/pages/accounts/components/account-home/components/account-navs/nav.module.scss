@@ -1,0 +1,19 @@
+.nav {
+  margin: 3rem 0 4rem 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__nav {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+    &Active {
+      color: var(--color-primary);
+    }
+  }
+}

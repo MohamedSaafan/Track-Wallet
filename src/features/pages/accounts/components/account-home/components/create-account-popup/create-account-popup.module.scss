@@ -1,0 +1,66 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-gray-overlay);
+
+  &__content {
+    height: 233px;
+    width: 329px;
+    background-color: #fff;
+    border-radius: 37px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    padding: 2rem;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__label {
+    color: var(--color-gray-1);
+    display: block;
+    margin: 2rem auto 0;
+    width: 241px;
+  }
+
+  &__input {
+    border-radius: var(--input-border-radius);
+    border: 2px solid var(--color-gray-1);
+    width: 241px;
+    height: 30px;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 15px;
+    margin-top: 0.5rem;
+  }
+
+  &__buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  &__button {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: 2px solid var(--color-primary);
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+
+    &:first-of-type {
+      background-color: #fff;
+      color: var(--color-primary);
+      margin-right: 1rem;
+    }
+  }
+}
