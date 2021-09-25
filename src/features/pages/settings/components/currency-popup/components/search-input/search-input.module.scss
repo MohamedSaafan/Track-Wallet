@@ -1,0 +1,21 @@
+.input {
+  border: none;
+  outline: none;
+  border-radius: var(--input-border-radius);
+  padding-left: 0.5rem;
+  &Wrapper {
+    border: 2px solid var(--color-gray-1);
+    border-radius: var(--input-border-radius);
+    width: 220px;
+    height: 34px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: calc(18.8px + 0.5rem);
+    position: relative;
+  }
+  &Image {
+    position: absolute;
+    left: 0.5rem;
+  }
+}

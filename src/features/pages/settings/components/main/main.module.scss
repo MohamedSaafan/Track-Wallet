@@ -1,0 +1,33 @@
+.main {
+  &__btn {
+    width: 239px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--color-gray-1);
+    color: #fff;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+    border-radius: var(--input-border-radius);
+    font-size: 11px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    span {
+      margin-right: 0.5rem;
+    }
+
+    &Currencies {
+      justify-content: space-between;
+      margin-top: 3rem;
+
+      div {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

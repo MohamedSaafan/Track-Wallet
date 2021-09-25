@@ -1,0 +1,30 @@
+.main {
+  &__btns {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: calc(90px + 90px + 2rem);
+  }
+
+  &__btn {
+    width: 90px;
+    border-radius: var(--button-border-radius);
+    border: none;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    color: #fff;
+    height: 30px;
+    border: 2px solid var(--color-primary);
+    font-size: 13px;
+    font-weight: bold;
+    &Close {
+      background-color: #fff;
+      color: var(--color-primary);
+    }
+  }
+}

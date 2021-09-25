@@ -1,0 +1,11 @@
+.footer {
+  width: 239px;
+  margin: 4rem auto;
+  text-align: center;
+  font-size: 12px;
+
+  &__link {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+}

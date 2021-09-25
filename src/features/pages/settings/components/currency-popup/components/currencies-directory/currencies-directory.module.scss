@@ -1,0 +1,12 @@
+.directory {
+  margin-top: 2rem;
+  &__coin {
+    margin-left: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}
