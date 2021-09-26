@@ -20,7 +20,18 @@ const Main: React.FC<Props> = (props) => {
           />
         </>
       );
-    return <> </>;
+    return (
+      <>
+        {" "}
+        <Input
+          placeholder=''
+          label=''
+          type='text'
+          value='word1 word2 word3 word4 word5 word6'
+        />
+        <div className={Styles.main__copy}>Copy to Clipboard</div>
+      </>
+    );
   };
 
   const handleNextClick = () => {

@@ -7,6 +7,21 @@
   &__right {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__alert {
+    position: absolute;
+    color: #fff;
+    font-size: 8px;
+    width: 66px;
+    height: 15px;
+    top: -18px;
+    background-color: var(--color-gray-1);
+    border-radius: 5px;
+    left: -35px;
+    display: none;
+    justify-content: center;
     align-items: center;
   }
 
@@ -16,8 +31,27 @@
     border: none;
     outline: none;
     cursor: pointer;
+    position: relative;
+    width: 13px;
+    height: 13px;
+
+    &:hover {
+      background-color: var(--color-gray-1);
+      .account {
+        &__alert {
+          display: flex;
+        }
+      }
+    }
+
     &Copy {
       margin-left: 1.5rem;
+      background-image: url("../../../../images/header-card/copy.svg");
+      background-size: cover;
+
+      &:hover {
+        background-image: url("../../../../images/header-card/copy-hover.svg");
+      }
     }
 
     img {

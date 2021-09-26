@@ -8,7 +8,7 @@ import CurrencyPopUp from "./components/currency-popup";
 interface Props {}
 
 const Settings: React.FC<Props> = (props) => {
-  const [shouldShowCurrencyPopup, setShouldShowCurrencyPopup] = useState(true);
+  const [shouldShowCurrencyPopup, setShouldShowCurrencyPopup] = useState(false);
 
   const openCurrencyPopup = () => {
     console.log("from open popup");
